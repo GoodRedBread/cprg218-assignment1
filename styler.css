@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background-color: #120323;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+h1{
+    color: #97bf04;
+    margin-left: 1%;
+}
+#container{
+    display: flex;
+    border: 2px;
+}
+h2{
+    color: #120323;
+    margin-bottom: 1%;
+}
+p{
+    margin-bottom: 2%;
+}
+h3{
+    margin-bottom: 1%;
+}
+figure{
+    margin: 5%;
+    display: flex;
+}
+img[src="images/puffin-square.webp"]{
+    border: 5px solid #d9043d;
+    height: 250px;
+    width: 250px;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+aside{
+    background-color: #97bf04;
+    padding: 1%;
+    padding-top: 1.5%;
+    margin-top: 1%;
+    max-width: 30%;
+}
+footer{
+    background-color: #d9043d;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 1000px){
+    #container{
+        flex-wrap: wrap;
+    }
+    aside{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    figure{
+        flex-wrap: wrap;
+    }
+    img[src="images/puffin-square.webp"]{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+}
+@media screen and (max-width: 620px){
+    header{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
